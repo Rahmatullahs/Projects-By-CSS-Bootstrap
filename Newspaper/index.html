@@ -5,38 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cactus News</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        #mycontent{
+    height: 85vh;
+}
+
+iframe{
+    width: 100%;
+    height: 80vh;
+}
+
+footer{
+    height: 5vh;
+    background-color: bisque;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#footerlink{
+    color: brown;
+}
+    </style>
+
 </head>
 
 <body>
-    
-  <!--   <div>
-    <nav>
-
-        <div id="img"><img src="images.jpg" alt=""></div>
-        <div id="menu">
-            <ul>Recentnews</ul>
-            <ul>Finance</ul>
-            <ul>Crime</ul>
-
-        </div>
-
-    </nav>
-    </div> -->
-
-    <div>  
-
-        <table>
-
-            <tr>
-<td><img src="images.jpg" alt=""></td>
-<td><ul>Recentnews</ul>
-    <ul>Finance</ul>
-    <ul>Crime</ul>
-</td>
-            </tr>
-        </table>
+    <nav class="navbar" style="background-color: #e3f2fd;">
+        <div>
+    <ul class="nav justify-content align-items-center">
+    </li>
+    <li class="nav-item">
+      <a  class="nav-link" href="crime.html" target="mycontent">
+        <img src="images.jpg" alt="" class="rounded-circle" width="50" height="50" ></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="crime.html" target="mycontent">Recent News</a>
+    </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="crime.html"target="mycontent">Crime</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="finance.html"target="mycontent">Finance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="crime.html" target="mycontent">Politics</a>
+        </li>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="crime.html" target="mycontent">Entertainment</a>
+    </li>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="crime.html" target="mycontent">Sports</a>
+</li>
+      </ul>
     </div>
+    <div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+    </nav> 
+
+<div>
+    <h1>News Today</h1>
+</div>
+
+<div id="mycontent">
+    <iframe src="rcentnews.html" frameborder="0" name="mycontent"></iframe>
+</div>
+
+        
+<footer  class="footer bg-warning text-dark align-items-center"> Copyright 1999-2025 by Refsnes Data. All Rights Reserved. cactusnews is Powered by Rahmat.
+</footer>
 </body>
 
 </html>
